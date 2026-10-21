@@ -24,7 +24,7 @@ export default function Footer() {
           <img 
             src={brand.logoPath} 
             alt={`${brand.name} Emblem`} 
-            className="w-8 h-8 object-contain rounded border border-amber-brand/40"
+            className="w-8 h-8 object-contain rounded-full border border-amber-brand/40"
           />
           <span className="font-black text-xl tracking-wider text-gym-text-light uppercase">
             {brand.shortName}

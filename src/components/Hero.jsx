@@ -48,7 +48,7 @@ export default function Hero() {
             <img 
               src={brand.logoPath} 
               alt={brand.name} 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain rounded-full"
             />
           </div>
         </div>

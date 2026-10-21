@@ -63,7 +63,7 @@ export default function Navbar() {
           <img 
             src={brand.logoPath} 
             alt={`${brand.name} Emblem`} 
-            className="w-10 h-10 object-contain rounded-md border border-amber-brand/40 group-hover:border-amber-brand transition-colors"
+            className="w-10 h-10 object-contain rounded-full border border-amber-brand/40 group-hover:border-amber-brand transition-colors"
           />
           <span className="font-black text-xl sm:text-2xl tracking-wider text-gym-text-light uppercase group-hover:text-amber-brand transition-colors">
             {brand.shortName}

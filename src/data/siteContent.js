@@ -16,7 +16,7 @@ export const siteContent = {
     name: "Rebirth Fitness Gym",
     shortName: "Rebirth Fitness",
     tagline: "Time to born again",
-    logoPath: "/images/logo.svg",
+    logoPath: "/images/logo.png",
     logoPng: "/images/logo.png",
     heroBgImage: "/images/hero-bg.jpg",
     copyrightYear: "2025",
