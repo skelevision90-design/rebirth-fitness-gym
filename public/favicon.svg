@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <!-- Subtle metallic rim -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC837" />
+      <stop offset="50%" stop-color="#F5A800" />
+      <stop offset="100%" stop-color="#D48800" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5A800" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0E0E0E" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Outer Rounded Square Border -->
+  <rect x="6" y="6" width="188" height="188" rx="28" fill="#0E0E0E" stroke="url(#goldGrad)" stroke-width="4.5" />
+  
+  <!-- Inner Circle with Amber Border -->
+  <circle cx="100" cy="100" r="82" fill="#121212" stroke="#F5A800" stroke-width="2.5" stroke-dasharray="4 2" />
+  <circle cx="100" cy="100" r="76" fill="#0A0A0A" />
+
+  <!-- Sun Rays / Sunrise behind barbell -->
+  <circle cx="100" cy="85" r="45" fill="url(#sunGlow)" />
+  <g stroke="#F5A800" stroke-width="1.75" opacity="0.6">
+    <line x1="100" y1="50" x2="100" y2="38" />
+    <line x1="125" y1="57" x2="133" y2="48" />
+    <line x1="145" y1="75" x2="156" y2="70" />
+    <line x1="75" y1="57" x2="67" y2="48" />
+    <line x1="55" y1="75" x2="44" y2="70" />
+  </g>
+
+  <!-- Barbell and Weight Plates Silhouette -->
+  <!-- Barbell Bar -->
+  <rect x="42" y="93" width="116" height="5" rx="2.5" fill="#FFFFFF" />
+  <!-- Inner Collars -->
+  <rect x="60" y="87" width="5" height="17" rx="1" fill="#F5A800" />
+  <rect x="135" y="87" width="5" height="17" rx="1" fill="#F5A800" />
+  <!-- Large Weight Plates -->
+  <rect x="50" y="78" width="7" height="35" rx="2" fill="#F5A800" />
+  <rect x="143" y="78" width="7" height="35" rx="2" fill="#F5A800" />
+  <!-- Outer Smaller Plates -->
+  <rect x="42" y="83" width="5" height="25" rx="1.5" fill="#E09800" />
+  <rect x="153" y="83" width="5" height="25" rx="1.5" fill="#E09800" />
+  <!-- Center Knurling Details -->
+  <rect x="90" y="92.5" width="20" height="6" fill="#F5A800" opacity="0.9" />
+
+  <!-- Text: REBIRTH -->
+  <text x="100" y="66" 
+        text-anchor="middle" 
+        fill="#FFFFFF" 
+        font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+        font-weight="900" 
+        font-size="19" 
+        letter-spacing="2.5">REBIRTH</text>
+
+  <!-- Banner / Pill: FITNESS GYM -->
+  <rect x="48" y="108" width="104" height="20" rx="4" fill="#F5A800" />
+  <text x="100" y="122.5" 
+        text-anchor="middle" 
+        fill="#000000" 
+        font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+        font-weight="800" 
+        font-size="10.5" 
+        letter-spacing="1.8">FITNESS GYM</text>
+
+  <!-- Tagline: TIME TO BORN AGAIN -->
+  <text x="100" y="148" 
+        text-anchor="middle" 
+        fill="#F5A800" 
+        font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+        font-weight="700" 
+        font-size="7.5" 
+        letter-spacing="1.2">TIME TO BORN AGAIN</text>
+  
+  <!-- Subtle decorative stars -->
+  <polygon points="100,157 101.5,160.5 105,161 102.5,163.5 103,167 100,165 97,167 97.5,163.5 95,161 98.5,160.5" fill="#F5A800" opacity="0.8" />
+</svg>
