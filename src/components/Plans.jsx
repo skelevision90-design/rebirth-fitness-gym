@@ -18,6 +18,24 @@ export default function Plans() {
   const [activeIndex, setActiveIndex] = useState(1); // default to middle featured plan
   const carouselRef = useRef(null);
 
+  // Center featured orange card on mobile load
+  useEffect(() => {
+    if (carouselRef.current && window.innerWidth < 1024) {
+      const featuredCard = carouselRef.current.children[1];
+      if (featuredCard) {
+        setTimeout(() => {
+          if (carouselRef.current && featuredCard) {
+            carouselRef.current.scrollTo({
+              left: featuredCard.offsetLeft - (carouselRef.current.clientWidth - featuredCard.clientWidth) / 2,
+              behavior: 'auto',
+            });
+            setActiveIndex(1);
+          }
+        }, 100);
+      }
+    }
+  }, []);
+
   // Update active dot on mobile scroll
   const handleScroll = () => {
     if (!carouselRef.current) return;

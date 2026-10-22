@@ -56,7 +56,7 @@ export default function Hero() {
         {/* Hero Title with Amber Box on "BORN AGAIN." */}
         <h1 className="headline-hero text-gym-text-light mb-4 sm:mb-6 tracking-tight flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
           <span>{hero.titlePrefix}</span>
-          <span className="bg-amber-brand text-black px-3.5 py-1 rounded inline-block font-black shadow-md">
+          <span className="bg-amber-brand text-black px-3.5 py-1 rounded inline-block font-black shadow-md whitespace-nowrap">
             {hero.titleHighlight}
           </span>
         </h1>

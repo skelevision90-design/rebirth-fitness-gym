@@ -102,14 +102,21 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Mobile Hamburger Button */}
-        <div className="flex lg:hidden items-center">
+        {/* Mobile Action & Hamburger Button */}
+        <div className="flex lg:hidden items-center gap-3">
+          <a
+            href="#join"
+            onClick={(e) => handleNavClick(e, '#join')}
+            className="bg-amber-brand text-black font-extrabold text-[15px] px-3.5 py-1.5 rounded hover:bg-amber-hover transition-colors shadow-sm"
+          >
+            Join Now
+          </a>
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle Navigation Menu"
-            className="text-gym-text-light p-2.5 rounded-lg hover:bg-gym-card focus-visible:outline-amber-brand min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
+            className="text-gym-text-light p-2 rounded-lg hover:bg-gym-card focus-visible:outline-amber-brand min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
           >
             {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>

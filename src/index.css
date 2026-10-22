@@ -26,7 +26,29 @@
   --color-gym-text-body: #3F3F46;
 }
 
-:root {
+:root,
+body {
+  --color-amber-brand: #F5A800;
+  --color-amber-hover: #E09800;
+  --color-amber-subtle: rgba(245, 168, 0, 0.15);
+  --color-amber-border: rgba(245, 168, 0, 0.4);
+
+  --color-gym-black: #0E0E0E;
+  --color-gym-dark: #141414;
+  --color-gym-card: #181818;
+  --color-gym-input: #121212;
+  --color-gym-border: #2A2A2A;
+  
+  --color-gym-cream: #FBF6EC;
+  --color-gym-card-light: #FEFCF9;
+  --color-gym-border-light: #E5DFC8;
+  --color-gym-divider-light: #D5CEB8;
+
+  --color-gym-text-light: #F5F5F7;
+  --color-gym-text-muted: #8E8D8A;
+  --color-gym-text-dark: #121212;
+  --color-gym-text-body: #3F3F46;
+
   --color-primary: #F5A800;
   --color-primary-hover: #E09800;
   --color-bg-black: #0E0E0E;
@@ -37,6 +59,40 @@
 
   font-family: var(--font-sans);
   color-scheme: dark;
+}
+
+/* Bulletproof utility classes ensuring 100% cross-platform/mobile rendering */
+.bg-amber-brand {
+  background-color: #F5A800 !important;
+  background-color: var(--color-amber-brand, #F5A800) !important;
+}
+
+.text-amber-brand {
+  color: #F5A800 !important;
+  color: var(--color-amber-brand, #F5A800) !important;
+}
+
+.border-amber-brand {
+  border-color: #F5A800 !important;
+  border-color: var(--color-amber-brand, #F5A800) !important;
+}
+
+.bg-amber-hover:hover {
+  background-color: #E09800 !important;
+  background-color: var(--color-amber-hover, #E09800) !important;
+}
+
+.bg-amber-subtle {
+  background-color: rgba(245, 168, 0, 0.15) !important;
+}
+
+.border-amber-border {
+  border-color: rgba(245, 168, 0, 0.4) !important;
+}
+
+.ring-amber-brand {
+  --tw-ring-color: #F5A800 !important;
+  outline-color: #F5A800 !important;
 }
 
 /* Base HTML & Accessibility rules */
@@ -82,7 +138,7 @@ body {
 
 /* Typography Fluid Clamps */
 .headline-hero {
-  font-size: clamp(2.25rem, 6vw, 4.5rem);
+  font-size: clamp(1.85rem, 5.5vw, 4.5rem);
   line-height: 1.1;
   font-weight: 900;
   letter-spacing: -0.02em;
